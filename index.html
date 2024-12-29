@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+       <!-- Light mode button -->
+    <div class="light-mode-toggle">
+      <button id="light-mode-toggle" class="btn"> <i class="fas fa-sun" id="mode-icon"></i>
+      </button>
+    </div>
+        <ul class="navbar__menu">
+            <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+            <li><a href="#projects"><i class="fa fa-code"></i>Projects</a></li>
+            <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+        </ul>
+         <!-- Audio button -->
+    <div class="audio-toggle">
+      <audio id="myAudio" src="audio.mp3"></audio>
+      <button id="audioButton" onclick="toggleMusic()">
+        <i class="fa fa-music"></i>
+      </button>
+  </div>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <!-- <div class="row"> -->
+              <div class="home-info">
+                <h3 class="hello">Hello, my name is 
+                    <span class="name">Stefarnie Rhone</span>
+                </h3>
+                <span class="text first-text">I want to become a </span>
+                <span class="text occupation"></span>
+                <p> I'm a newly learning devolper starting my career, eager to learn and develope my coding skills...</p>
+    </section>
+
+<!-- About Section -->
+<section class="about section" id="about">
+    <div class="container">
+      <header>
+        <h2>About Me</h2>
+      </header>
+  
+      <div class="about-content">
+        <article class="about-text">
+          <h3>I'm Stefarnie Rhone, a <span>Bootcamp Trainee</span></h3>
+          <p>
+            Hi guys! I'm new to coding in general but specifically web development. 
+            I'm currently studying at JustIT in their Level 3 Software Development course, 
+            while also picking up extra information from websites and videos to build my skills on my journey. One of my new found hobbies is creating small web projects which has helped me pick up a greater understanding of Html, Css and Javascript and the best practice when using these apps. if you would like to follow my journey throughout my coding carear follow me on Github @stefarnie where i post all my mini projects ;)
+          </p>
+        </article>
+  
+        <section class="course-info">
+          <div class="info-items">
+            <p>Course Name: <span>JustIT Bootcamp</span></p>
+            <p>Start Date: <span>28 Oct 2024</span></p>
+            <p>Age: <span>21</span></p>
+            <p>Email: <span>Stefarnie@outlook.com</span></p>
+            <p>Phone: <span>+44 7359 320 849</span></p>
+            <p>City: <span>Birmingham</span></p>
+          </div>
+        </section>
+  
+        <section class="skills">
+          <div class="skills-item">
+            <h5>HTML</h5>
+            <div class="progress">
+              <div class="progress-in" style="width: 70%;"></div>
+              <div class="skill-percent">7</div>
+            </div>
+          </div>
+          <div class="skills-item">
+            <h5>CSS</h5>
+            <div class="progress">
+              <div class="progress-in" style="width: 85%;"></div>
+              <div class="skill-percent">8.5</div>
+            </div>
+          </div>
+          <div class="skills-item">
+            <h5>JS</h5>
+            <div class="progress">
+              <div class="progress-in" style="width: 55%;"></div>
+              <div class="skill-percent">5.5</div>
+            </div>
+          </div>
+          <div class="skills-item">
+            <h5>Python</h5>
+            <div class="progress">
+              <div class="progress-in" style="width: 70%;"></div>
+              <div class="skill-percent">7</div>
+            </div>
+          </div>
+          <div class="skills-item">
+            <h5>SQL</h5>
+            <div class="progress">
+              <div class="progress-in" style="width: 65%;"></div>
+              <div class="skill-percent">6.5</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+  
+<!-- Projects Section -->
+<section id="projects">
+  <h2>My Projects</h2>
+  <p>Here are a few of the projects I have worked on:</p>
+  <div class="projects">
+    
+    <!-- portfolio img start  -->
+    <div class="projects-item">
+      <div class="projects-item-inner shadow-dark">
+        <div class="projects-img">
+          <!-- Add anchor tag wrapping the image to make it clickable -->
+          <a href="oldtodo.html" target="_blank">
+            <img src="1to-do project.png" alt="To-Do Project">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio img end -->
+
+    <!-- portfolio img start  -->
+    <div class="projects-item">
+      <div class="projects-item-inner shadow-dark">
+        <div class="projects-img">
+          <!-- Add anchor tag wrapping the image to make it clickable -->
+          <a href="timer.html" target="_blank">
+            <img src="timer project.png" alt="Timer Project">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio img end -->
+
+    <!-- portfolio img start  -->
+    <div class="projects-item">
+      <div class="projects-item-inner shadow-dark">
+        <div class="projects-img">
+          <!-- Add anchor tag wrapping the image to make it clickable -->
+          <a href="new-todo.html" target="_blank">
+            <img src="to-do project.png" alt="To-Do Project">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio img end -->
+
+    <!-- portfolio img start  -->
+    <div class="projects-item">
+      <div class="projects-item-inner shadow-dark">
+        <div class="projects-img">
+          <!-- Add anchor tag wrapping the image to make it clickable -->
+          <a href="calander.html" target="_blank">
+            <img src="calander project.png" alt="Calendar Project">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio img end -->
+    
+  </div>
+</section>
+
+
+
+    <!-- Contact Section -->
+   <section class="contact section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="section-title padd-15">
+          <h2>Contact Me</h2>
+        </div>
+      </div>
+      <h3 class="contact-title">Want to contact or work with me ?</h3>
+      <h4 class="contact-sub-title">Heres my contact details</h4>
+      <div class="row">
+      <!--Contact info item start  -->
+      <div class="contact-info-item padd-15">
+        <div class="icon"><i class="fa fa-phone"></i></div>
+        <h4>Call me</h4>
+        <p>+44 7359 320 849</p>
+      </div>
+      <!--Contact info item end  -->
+      <!--Contact info item start  -->
+       <div class="contact-info-item padd-15">
+        <div class="icon"><i class="fa fa-envelope"></i></div>
+        <h4>Email</h4>
+        <p>Stefarnie@outlook.com</p>
+      </div>
+      <!--Contact info item end  -->
+      <!--Contact info item start  -->
+       <div class="contact-info-item padd-15">
+        <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+        <h4>Located in</h4>
+        <p>Birmingham</p>
+      </div>
+      <!--Contact info item end  -->
+         <!--Contact info item start  -->
+         <div class="contact-info-item padd-15">
+          <div class="icon"><i class="fa fa-search"></i></div>
+          <h4>Find me on LinkedIn</h4>
+          <p>Stefarnie Rhone</p>
+        </div>
+        <!--Contact info item end  -->
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Stefarnie Rhone. All Rights Reserved.</p>
+    </footer>
+<!-- Js script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="Script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bad Script', serif;
+    background-color: #5f5e5e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-family: 'Bad Script', serif;
+    color: #b30d02;
+    border: 3px solid #333;
+    background-color: #e4e5e6;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#controlsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#taskInput {
+    font-size: 18px;
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+#taskInput:focus {
+    outline: none;
+    border-color: #330fa8;
+}
+
+button {
+    font-size: 14px;
+    color: #fff;
+    background-color: #330fa8;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #3c0dd6;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#listContainer {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ac2c08;
+    border-radius: 10px;
+    color: #f4f4f4;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+    transform: translateX(10px);
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
+#highlightTasksButton {
+    background-color: #f40b0b;
+    color: #fff;
+}
+
+#highlightTasksButton:hover {
+    background-color: #c60b0b;
+}
+
+@media (max-width: 600px) {
+    #taskInput {
+        width: 180px;
+    }
+
+    #controlsContainer {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+    
+    li {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
